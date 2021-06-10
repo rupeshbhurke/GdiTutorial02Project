@@ -19,7 +19,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -74,6 +74,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="BITMAP1.BMP" />
+    <None Include="BITMAP2.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GDI02.RC" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MAIN.CPP" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RESOURCE.H" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
